@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/locationdisabledbackground"
+    tools:context="fragments.locationDisabledFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="30dp"
+        android:elevation="10dp"
+        android:textSize="36sp"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/grey"
+        android:text="Location Disabled"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:padding="7dp"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:elevation="10dp"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:text="You need to update your Current location to access nearby Members"/>
+
+        <Button
+            android:id="@+id/buttonToMapsoo"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:text="Update Location"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:layout_marginLeft="23dp"
+            android:elevation="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

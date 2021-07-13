@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="com.example.pixelwallpaper.uploadActivity">
+
+
+    <ImageButton
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:src="@drawable/ic_close_24"/>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="510dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/noimageselected" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:id="@+id/choose3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/btn_edit_profile"
+            android:fontFamily="@font/bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Choose"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/post3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/btn_edit_profile"
+            android:fontFamily="@font/bold"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Post"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

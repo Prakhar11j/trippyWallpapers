@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pixelwallpaper.EditProfileActivity">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_baseline_arrow_back_24" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/userdefaultimage"
+            android:layout_gravity="center"
+            android:id="@+id/image_profile"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:layout_gravity="center"
+            android:id="@+id/change_photo"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/grey"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:id="@+id/fullname"
+                android:hint="Full name"
+                android:ems="10"
+                android:background="@drawable/input_feild"
+                android:textColorHint="@color/grey"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="20dp"
+                app:met_floatingLabel="normal"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:id="@+id/username"
+                android:ems="10"
+                android:hint="Username"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/input_feild"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="12dp"
+                app:met_floatingLabel="normal"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_feild"
+                android:id="@+id/bio"
+                android:ems="10"
+                android:hint="About you..."
+                android:textColorHint="@color/grey"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="12dp"
+                app:met_floatingLabel="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="162dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/regular"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:id="@+id/save"/>
+
+
+
+            <ImageButton
+                android:id="@+id/buttonToMaps"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bold"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/btn_update_loc"
+                android:src="@drawable/ic_outline_location_white_24"
+                android:onClick="moveToMaps" />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Like our App?"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Rate Us"
+                    android:onClick="moveToFeedback"
+                    android:textColor="@color/red"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
